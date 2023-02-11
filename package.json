@@ -1,0 +1,26 @@
+{
+  "name": "curd_app",
+  "version": "1.0.0",
+  "description": "CURD App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "ejs-lint": "^1.1.0"
+  }
+}

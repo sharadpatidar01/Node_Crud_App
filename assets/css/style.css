@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'PT Sans', sans-serif;
+ */
+
+:root{
+    --dark:#23296e;
+    --light:#2f4256;
+    --border: #b4cfeb;
+    --border-btn: #383939;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    /* text-align: center; */
+}
+
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif; ;
+}
+
+.container{
+    max-width:1024px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size:1.5em;
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.border-shadow{
+    border:1px solid var(--border-btn);
+    box-shadow:1px 3px 10px #e9ecef;
+    padding: 3px 15px 3px 15px;
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.inline{
+    display:inline-block;
+}
+
+.text-light{
+    color:var(--light);
+}
+
+.text-gradient{
+    background: linear-gradient(to right,#dc4034,#028ead);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header nav{
+    background-color: #F7FF93;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#site-main{
+    margin-top:6em;
+    font-family: 'Barlow', sans-serif;
+}
+
+#site-main.container.box-nav>a{
+    font-size: 1em;
+    padding:0.5em 1em;
+}
+
+#site-main .container from{
+    margin: 2em 0;
+}
+.user-container{
+    margin-bottom: 20px;
+}
+
+table{
+    border-spacing:0px;
+    width:100%;
+}
+
+.table td, .table th{
+    padding: 0.75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.tabler td > a.btn{
+    padding: 0.3em 1em;
+    font-size: 1.1em;
+    margin:0.2em;
+}
+
+.table tr:hover{
+    background-color: #F7FF93;
+}
+
+.table tr:hover td > a{
+    box-shadow: none;
+}
+
+.table .thead-dark th{
+    color: #fff;
+    background-color:var(--dark);
+    border-color:#32383e;
+}
+
+.btn{
+    margin:0px 10px 0px 10px;
+    padding:2px 15px 2px 15px;
+    border-radius: 20px;
+}
+.border-shadow:hover{
+    background-color: #F7FF93;
+    border-color:#02a4ad;
+}
+.btn:hover{
+    background-color: #fff;
+}
+
+/* Add user & user template */
+.form-title{
+    margin-top:2em;
+}
+
+.form-title>h2{
+    padding: .5em 0;
+}
+
+.new_user{
+    max-width:786px;
+    margin: auto;
+}
+
+#updater_user .form-group,
+#add_user .form-group{
+    margin: .4rem 0;
+}
+
+#update_user .form-group input[type="text"],
+#add_user .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    border-radius: .2em;
+}
+
+#update_user .form-group .radio,
+#add_user .form-group .radio{
+    margin: 1em 2em;
+}
+
+/* adding style to radio buttons */
+.radio input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+}
+
+.radio input[type="radio"]+ .radio-label::before{
+    content: "";
+    background: var(--border-btn);
+    border-radius: 100%;
+    border:1px solid var(--border);
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: -0em;
+    margin-right: .5em;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+
+.radio input[type="radio"]:checked+ .radio-label::before{
+    background-color: #F7FF93;
+    box-shadow: inset 0 0 0 4px #e9ecef;
+}
+
+.radio input[type="radio"]:focus+ .radio-label::before{
+    outline: none;
+    border-color: #F7FF93;
+}
+
+.radio input[type="radio"]:disabled+ .radio-label::before{
+    background: #b4b4b4;
+    border-color: #b4b4b4;
+    box-shadow: inset 0 0 0 4px #e9ecef;
+}
+
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color: #F7FF93;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin:.5em 0;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover{
+    background-color:var(--dark);
+    color:var(--border);
+}
+
+/* emailVerification */
+
+.emailVerification{
+    display:flex;
+    justify-content: space-between;
+}
+#verification{
+    padding-top: 36px;
+}
